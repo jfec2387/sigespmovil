@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+
+
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/organismo.css">
+        <title>SIGESP Organismos</title>
+    </head>
+    <body>
+        <div data-role="page" id="pageone" class="">
+            <div class="title-page">
+                <h1 style="display:none;">SIGESP Móvil</h1>
+                <img src="img/SIGESP-Movil.png" alt="Avatar" width="171px" height="51px" class="image">
+                <a href="#" onclick="window.open('{{event.url}}','_system', 'location=yes'); return false;" rel="external"></a>
+            </div>
+            <div data-role="header" class="header">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="#AppMenu" data-rel="popup" data-transition="slideup">Consulta</a>
+                        </li>
+                        <li>
+                            <a href="#InfoMenu" data-rel="popup" data-transition="slideup">Información</a>
+                        </li>
+                        <li>
+                            <a href="#SocialMenu" data-rel="popup" data-transition="slideup">Redes Sociales</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="popup" id="AppMenu"  data-theme="a">
+                    <ul class="aplicacion-submenu" data-role="listview" data-inset="true" style="min-width:210px; top:85px !import;">
+                        <li><a href="organismo.html" data-transition="flow">Organismos</a></li>
+                        <li><a href="soporte.html" data-transition="flow">Soporte</a></li>
+                        <li><a href="novedades.html" data-transition="flow">Novedades</a></li>
+                        <li><a href="descargas.html" data-transition="flow">Descargas</a></li>
+                    </ul>
+                </div>
+                <div data-role="popup" id="InfoMenu"  data-theme="a">
+                    <ul class="aplicacion-submenu" data-role="listview" data-inset="true" style="min-width:210px; top:85px !import;">
+                        
+                        <li><a href="#" onclick="window.open('http://www.sigesp.com.ve/', '_system');" rel="external">sigesp.com.ve</a></li>
+                        <li><a href="#"  onclick="window.open('http://www.ieager.com.ve/', '_system');" rel="external">ieager.com.ve</a></li>
+                        <li><a href="planes.html" data-transition="flow">Servicios de Mantenimiento</a></li>
+                        <li><a href="contactanos.html" data-transition="flow">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div data-role="popup" id="SocialMenu"  data-theme="a">
+                    <ul class="aplicacion-submenu" data-role="listview" data-inset="true" style="min-width:210px; top:85px !import;">
+                        <li><a href="#"  onclick="window.open('https://twitter.com/sigespoficial', '_system');" rel="external">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="my-back">
+                <a href="bienvenido.html" class="ui-btn ui-shadow ui-icon-back ui-btn-icon-notext ui-corner-all my-back" data-transition="flow">No text</a>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="title-page title-registro">
+                    <h1>Organismos</h1>
+                </div>
+                <div>
+                    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Buscar Organismos..." data-inset="true">
+                        <li><a href="#myModal" data-rel="popup" data-transition="slideup">ALCALDIA CHARALLAVE</a></li>
+                        <li><a href="#myModal1" data-rel="popup" data-transition="slideup">ALCALDIA DE MUNICIPIO SILVA (TUCACAS)</a></li>
+                        <li><a href="#myModal2" data-rel="popup" data-transition="slideup">ALCALDIA SIMON PLANAS</a></li>
+                        <li><a href="#myModal3" data-rel="popup" data-transition="slideup">ARAGUA MINAS Y CANTERAS(ARAMICA)</a></li>
+                        <li><a href="#myModal4" data-rel="popup" data-transition="slideup">COLEGIO UNIVERSITARIO FRANCISCO DE MIRANDA (CUFM)</a></li>
+                    </ul>
+                </div>
+                <div  data-role="popup" id="myModal" data-dismissible="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><strong>ALCALDIA CHARALLAVE</strong></h4>
+                            </div>
+                            <form name="bug_action" method="get" action="bug_actiongroup_page.php">
+                                <table id="buglist" class="width100" cellspacing="1">
+                                    <tr class="row-category" border="1">
+                                        <td>&nbsp;</td> 
+                                        <td><a href="#">ID</a></td>
+                                        <td><a href="#">Status</a></td>
+                                        <td><a href="#">Resumen</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="spacer" colspan="10">&nbsp;</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17283">0017283</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SCF</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17236">0017236</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SCF - Detalle en reporte e Modulo Integrador</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=16986">0016986</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG-Apertura Mensual- Listado de Apertura</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17106">0017106</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SCB</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17005">0017005</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SNO</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17105">0017105</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div class="modal-footer">
+                                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  data-role="popup" id="myModal1" data-dismissible="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><strong>ALCALDIA DE MUNICIPIO SILVA (TUCACAS)</strong></h4>
+                            </div>
+                            <form name="bug_action" method="get" action="bug_actiongroup_page.php">
+                                <table id="buglist" class="width100" cellspacing="1">
+                                    <tr class="row-category" border="1">
+                                        <td>&nbsp;</td> 
+                                        <td><a href="#">ID</a></td>
+                                        <td><a href="#">Status</a></td>
+                                        <td><a href="#">Resumen</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="spacer" colspan="10">&nbsp;</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17283">0017162</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SNO-TXT</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17236">0017062</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SNO</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=16986">0017051</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">MIS</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17106">0017037</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">APR</td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div class="modal-footer">
+                                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  data-role="popup" id="myModal2" data-dismissible="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><strong>ALCALDIA SIMON PLANAS</strong></h4>
+                            </div>
+                            <form name="bug_action" method="get" action="bug_actiongroup_page.php">
+                                <table id="buglist" class="width100" cellspacing="1">
+                                    <tr class="row-category" border="1">
+                                        <td>&nbsp;</td> 
+                                        <td><a href="#">ID</a></td>
+                                        <td><a href="#">Status</a></td>
+                                        <td><a href="#">Resumen</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="spacer" colspan="10">&nbsp;</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17283">0017214</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (luisl)</td>
+                                        <td class="left">SNO (IMPORTACION DE CONCEPTOS EN RECURSOS HUMANOS)</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17236">0017129</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SCF</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=16986">0017150</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SNO</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17106">0017055</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17005">0016278</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17105">0017105</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div class="modal-footer">
+                                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  data-role="popup" id="myModal3" data-dismissible="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><strong>ARAGUA MINAS Y CANTERAS(ARAMICA)</strong></h4>
+                            </div>
+                            <form name="bug_action" method="get" action="bug_actiongroup_page.php">
+                                <table id="buglist" class="width100" cellspacing="1">
+                                    <tr class="row-category" border="1">
+                                        <td>&nbsp;</td> 
+                                        <td><a href="#">ID</a></td>
+                                        <td><a href="#">Status</a></td>
+                                        <td><a href="#">Resumen</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="spacer" colspan="10">&nbsp;</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17283">0017130</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17236">0017256</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">APR - CXP</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=16986">0017192</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">CXP</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17106">0017174</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (yeseniam)</td>
+                                        <td class="left">MIS</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17005">0017097</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (yeseniam)</td>
+                                        <td class="left">MIS</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17105">0016700</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (VidelmarM)</td>
+                                        <td class="left">(CXP) INFORME</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17105">0016093</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (eduardop)</td>
+                                        <td class="left">SOB (IVA CONTABLE)</td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div class="modal-footer">
+                                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  data-role="popup" id="myModal4" data-dismissible="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><strong>COLEGIO UNIVERSITARIO FRANCISCO DE MIRANDA (CUFM)</strong></h4>
+                            </div>
+                            <form name="bug_action" method="get" action="bug_actiongroup_page.php">
+                                <table id="buglist" class="width100" cellspacing="1">
+                                    <tr class="row-category" border="1">
+                                        <td>&nbsp;</td> 
+                                        <td><a href="#">ID</a></td>
+                                        <td><a href="#">Status</a></td>
+                                        <td><a href="#">Resumen</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="spacer" colspan="10">&nbsp;</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17283">0017180</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (mmanuel)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                    <tr bgcolor="#c8c8ff" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17236">0017280</a></td>
+                                        <td class="center"><u><a title="abierto">asignado</a></u> (mmanuel)</td>
+                                        <td class="left">SNO</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=16986">0017134</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17106">0017009</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">RPC</td>
+                                    </tr>
+                                    <tr bgcolor="#ffd850" border="1">
+                                        <td>&nbsp;</td>
+                                        <td><a href="view.php?id=17105">0017105</a></td>
+                                        <td class="center"><u><a title="abierto">aceptado</a></u> (jorgee)</td>
+                                        <td class="left">SPG</td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div class="modal-footer">
+                                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <table data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
+                        <thead>
+                            <tr>
+                                <td class="small-caption" width="14%" bgcolor="#ffa0a0">nuevo</td>
+                                <td class="small-caption" width="14%" bgcolor="#ff50a8">se necesitan más datos</td>
+                                <td class="small-caption" width="14%" bgcolor="#ffd850">aceptado</td>
+                                <td class="small-caption" width="14%" bgcolor="#ffffb0">confirmado</td>
+                                <td class="small-caption" width="14%" bgcolor="#c8c8ff">asignado</td>
+                                <td class="small-caption" width="14%" bgcolor="#cceedd">resuelto</td>
+                                <td class="small-caption" width="14%" bgcolor="#e8e8e8">cerrado</td>
+                            </tr>
+                        </thead>   
+                    </table>
+                </div>
+            </div>
+            <div data-role="footer" class="footer-page">
+
+            </div>
+        </div>
+        <!-- ============ JavaScripts ============== -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+            $ (document) .bind ('mobileinit', function () {
+              $ .mobile.changePage.defaults.changeHash = false;
+              $ .mobile.hashListeningEnabled = false;
+              $ .mobile.pushStateEnabled = false;
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    </body>
+</html>

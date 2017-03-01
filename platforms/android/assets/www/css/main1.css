@@ -1,0 +1,142 @@
+
+*{
+	text-transform: none;
+}
+body{
+	background-color: #acbed2!important;
+}
+#pageone{}
+/*=======PAGE INDEX=========*/
+#pageone>.title-page{
+	background: #0836a9;
+	border: 0px !important;
+}
+.title-page{
+	padding: 12px 12px 12px 15px;
+}
+.title-page h1{
+	color: 	#1a1a1a;
+	font-size: 20px;
+	text-align: left;
+}
+.header{
+	border-top: 0px !important;
+}
+.header div ul li a{
+	/*background-color: #f20d0d !important;*/
+	border-top: 4px solid #f20d0d !important;
+    /*border-color: #ddd !important;*/
+}
+.header div ul li a:hover{
+	background-color: #f42525 !important;
+	border-top: 4px solid transparent !important;
+    color: #fff !important;
+    text-shadow: 0 1px 0 #005599 !important;
+}
+.ui-page-theme-a .ui-btn.ui-btn-active{
+	background-color: #f20d0d !important;
+	border-top: 4px solid #f20d0d !important;
+}
+.lista-principal{}
+#pageone{
+	background-color: #b9bfc6 !important;
+}
+.footer-page{
+	bottom: 1px;
+	margin: 1px;
+	position: absolute;
+	width: 100%;
+}
+.aplicacion-submenu li{
+	display: block !important;
+	float: none !important;
+	margin: 0px !important;
+	width: 100% !important;
+}
+.aplicacion-submenu li a{
+}
+#pageone #AppMenu-popup{
+	top: 85px !important;
+	left: 10px !important;
+	width: 100% !important;
+}
+#pageone #InfoMenu-popup{
+	top: 85px !important;
+	left: 5px !important;
+	width: 100% !important;
+}
+#pageone #SocialMenu-popup{
+	top: 85px !important;
+	left: 5px !important;
+	width: 100% !important;
+}
+.title-registro{
+	text-align: center;
+}
+/*=======PAGE BIENVENIDOS=========*/
+.bienvenido{
+	/*background-color: #f42525 !important;*/
+    /*color: #fff !important;*/
+    /*text-shadow: 0 1px 0 #005599 !important;*/
+}
+/*=======PAGE INICIO=========*/
+.usuario{
+	margin-top: 10px !important;
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+}
+.usuario-idx{
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+}
+.usuario label{
+	text-align: left;
+}
+.usuario input, .usuario-idx label{
+	text-align: center;
+}
+.my-back{ 
+	right: 5%; 
+	position: absolute; 
+}
+/*=======PAGE PRELOADER=========*/
+/* Center the loader */
+#loader{
+	width:100vw;
+    height:100vh;
+    background: #0836a9;
+}
+#inloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -75px 0 0 -75px;
+  /*background: #3498db;*/
+  width: 120px;
+  height: 120px;
+}
+#inloader img{
+	margin-left: -80px
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.contactanos ul{
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+}
+/*=======PAGE CONTACTANOS=========*/

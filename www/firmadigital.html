@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+
+
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>SIGESP Noticias</title>
+        <style type="text/css">
+            #map-page, #map-canvas
+            {
+                width: 100%; height: 100%; padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="pageone" class="">
+            <div class="title-page">
+                <h1 style="display:none;">SIGESP Móvil</h1>
+                <img src="img/SIGESP-Movil.png" alt="Avatar" width="171px" height="51px" class="image">
+                <a href="#" onclick="window.open('{{event.url}}','_system', 'location=yes'); return false;" rel="external"></a>
+            </div>
+            <div data-role="header" class="header">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="#AppMenu" data-rel="popup" data-transition="slideup">Consulta</a>
+                        </li>
+                        <li>
+                            <a href="#InfoMenu" data-rel="popup" data-transition="slideup">Información</a>
+                        </li>
+                        <li>
+                            <a href="#SocialMenu" data-rel="popup" data-transition="slideup">Redes Sociales</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="popup" id="AppMenu"  data-theme="a">
+                    <ul class="aplicacion-submenu" data-role="listview" data-inset="true" style="min-width:210px; top:85px !import;">
+                        <li><a href="organismo.html" data-transition="flow">Organismos</a></li>
+                        <li><a href="soporte.html" data-transition="flow">Soporte</a></li>
+                        <li><a href="novedades.html" data-transition="flow">Novedades</a></li>
+                        <li><a href="descargas.html" data-transition="flow">Descargas</a></li>
+                    </ul>
+                </div>
+                <div data-role="popup" id="InfoMenu"  data-theme="a">
+                    <ul class="aplicacion-submenu" data-role="listview" data-inset="true" style="min-width:210px; top:85px !import;">
+                        
+                        <li><a href="#" onclick="window.open('http://www.sigesp.com.ve/', '_system');" rel="external">sigesp.com.ve</a></li>
+                        <li><a href="#"  onclick="window.open('http://www.ieager.com.ve/', '_system');" rel="external">ieager.com.ve</a></li>
+                        <li><a href="planes.html" data-transition="flow">Servicios de Mantenimiento</a></li>
+                        <li><a href="contactanos.html" data-transition="flow">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div data-role="popup" id="SocialMenu"  data-theme="a">
+                    <ul class="aplicacion-submenu" data-role="listview" data-inset="true" style="min-width:210px; top:85px !import;">
+                        <li><a href="#"  onclick="window.open('https://twitter.com/sigespoficial', '_system');" rel="external">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="my-back">
+                <a href="novedades.html" class="ui-btn ui-shadow ui-icon-back ui-btn-icon-notext ui-corner-all my-back" data-transition="flow">No text</a>
+            </div>
+            <div data-role="main" class="ui-content contactanos">
+                <h2>Noticias y Novedades</h2>
+                <div class="bg-1">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-sm-7 col-md-7 col-lg-7">
+                                <div class="thumbnail item text-center">
+                                    <h3>FIRMA DIGITAL</h3>
+                                    <p style="margin-top:1em;"><strong>SIGESP ENTERPRISE</strong> ya cuenta con un módulo de <strong>FIRMAS DIGITALES</strong>, mediante el cual se pueden firmar y validar los documentos PDF que se deseen; tiene una opción para configurar el formato de las firmas digitales además de un manual para crear los certificados y claves para poder hacer efectiva la firma digital. <a href="#" onclick="window.open('http://www.sigesp.com.ve/wp-content/uploads/2016/09/Un-paseo-por-la-nueva-funci%C3%B3n-%C2%A1Firma-Digital.pdf', '_system');" rel="external">Conoce más!!!</a></p>
+                                    <img class="img-responsive" src="img/Firma-Digital2.jpg" alt="DESCRICCION-DE-IMAGEN" title="TITULO-DE-IMAGEN" height="" width="650"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" class="footer-page">
+                <div data-role="page" id="map-page" data-url="map-page">
+                    <div data-role="header" data-theme="a">
+                        <h1>Maps</h1>
+                    </div>
+                    <div role="main" class="ui-content" id="map-canvas">
+                        <!-- map loads here... -->
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.404534146597!2d-69.29575668520532!3d10.065901192805986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e87677c9e7a8b59%3A0xde9a1b247f382f8b!2sSIGESP+CA.!5e0!3m2!1ses!2sve!4v1486165040814" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============ JavaScripts ============== -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+            $ (document) .bind ('mobileinit', function () {
+              $ .mobile.changePage.defaults.changeHash = false;
+              $ .mobile.hashListeningEnabled = false;
+              $ .mobile.pushStateEnabled = false;
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript">
+            /*
+            * Google Maps documentation: http://code.google.com/apis/maps/documentation/javascript/basics.html
+            * Geolocation documentation: http://dev.w3.org/geo/api/spec-source.html
+            */
+            $( document ).on( "pagecreate", "#map-page", function() {
+                    var defaultLatLng = new google.maps.LatLng(34.0983425, -118.3267434); // Default to Hollywood, CA when no geolocation support
+                    if ( navigator.geolocation ) {
+                        function success(pos) {
+                            // Location found, show map with these coordinates
+                            drawMap(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+                        }
+                        function fail(error) {
+                            drawMap(defaultLatLng); // Failed to find location, show default map
+                        }
+                        // Find the users current position. Cache the location for 5 minutes, timeout after 6 seconds
+                        navigator.geolocation.getCurrentPosition(success, fail, {maximumAge: 500000, enableHighAccuracy:true, timeout: 6000});
+                    } else {
+                        drawMap(defaultLatLng); // No geolocation support, show default map
+                    }
+                function drawMap(latlng) {
+                    var myOptions = {
+                        zoom: 10,
+                        center: latlng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+                    // Add an overlay to the map of current lat/lng
+                    var marker = new google.maps.Marker({
+                        position: latlng,
+                        map: map,
+                        title: "Greetings!"
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
